@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} Shortened URL Already Existed{% endblock %}
+
+{% block content %}
+
+    <h3>Opps!</h3>
+
+    <p>The URL: <strong>{{ original_url }}</strong><br/>
+    has already been shortened to:<br/> <a href="{{ original_url }}">{{ shortened_url }}</a>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <a href="">Back to front page and try again</a>
+
+
+{% endblock %}

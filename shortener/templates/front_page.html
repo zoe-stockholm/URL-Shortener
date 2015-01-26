@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}URL Input{% endblock %}
+
+{% block content %}
+    <h3>Please type in the URL you want to make shorten</h3>
+<form action="/shorten_url/" method="post">
+{{ form.as_p }}
+<input type="submit" value="Submit" id="submit"/>
+</form>
+{% endblock %}
