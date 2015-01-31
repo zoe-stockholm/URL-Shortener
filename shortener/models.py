@@ -52,7 +52,7 @@ class URLPairManager(BaseUserManager):
 
 
 class URLPair(TimeStampedModel, models.Model):
-    original_url = models.URLField()
+    original_url = models.URLField(max_length=1000)
     shortened_url = models.URLField()
     key = models.CharField(max_length=200)
 
