@@ -91,8 +91,8 @@ REQUIRE_LOGIN = False
 
 
 ########### GLOBAL CONSTANT SETTINGS
-BASE_URL = 'http://ec2-54-154-113-159.eu-west-1.compute.amazonaws.com:8000/'
-# BASE_URL = 'http://myurlshortener.com/'
+# BASE_URL = 'http://ec2-54-154-113-159.eu-west-1.compute.amazonaws.com:8000/'
+BASE_URL = 'http://myurlshortener.com/'
 PROJECT_ROOT = dirname(dirname(abspath(__file__))) + '/shortener/'
 TEST_DATA_PATH = 'data/cleaned_words.txt'
 TEST_SMALL_DATA_PATH = 'data/5_cleaned_words.txt'
