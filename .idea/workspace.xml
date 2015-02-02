@@ -48,8 +48,18 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shortener/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1440">
-              <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1440">
+              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shortcuts.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../venv/lib/python2.7/site-packages/django/shortcuts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="2505">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -75,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="front_page.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="front_page.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shortener/templates/front_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.17887564" vertical-offset="0" max-vertical-offset="587">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -95,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shortening_failed_page.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="shortening_failed_page.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shortener/templates/shortening_failed_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22998296" vertical-offset="0" max-vertical-offset="587">
-              <caret line="9" column="87" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
+              <caret line="9" column="90" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -141,7 +151,6 @@
         <option value="$PROJECT_DIR$/shortener/templates/existed.html" />
         <option value="$PROJECT_DIR$/shortener/errors.py" />
         <option value="$PROJECT_DIR$/shortener/templates/failed.html" />
-        <option value="$PROJECT_DIR$/shortener/templates/front_page.html" />
         <option value="$PROJECT_DIR$/shortener/data/cleaned_words.txt" />
         <option value="$PROJECT_DIR$/shortener/fyndiq_exceptions.py" />
         <option value="$PROJECT_DIR$/shortener/tests.py" />
@@ -158,6 +167,7 @@
         <option value="$PROJECT_DIR$/shortener/templates/shortening_failed_page.html" />
         <option value="$PROJECT_DIR$/shortener/templates/result_page.html" />
         <option value="$PROJECT_DIR$/shortener/templates/shorten_url_existed_page.html" />
+        <option value="$PROJECT_DIR$/shortener/templates/front_page.html" />
       </list>
     </option>
   </component>
@@ -890,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../venv/lib/python2.7/site-packages/django/shortcuts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33278957" vertical-offset="1176" max-vertical-offset="2505">
-          <caret line="99" column="4" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../venv/lib/python2.7/site-packages/django/http/response.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33278957" vertical-offset="5676" max-vertical-offset="7020">
@@ -1013,26 +1016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shortener/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1440">
-          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dev_Fyndiq/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1143" max-vertical-offset="1800">
           <caret line="95" column="65" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shortener/templates/front_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1055,8 +1042,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shortener/templates/shortening_failed_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22998296" vertical-offset="0" max-vertical-offset="587">
-          <caret line="9" column="87" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
+          <caret line="9" column="90" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../venv/lib/python2.7/site-packages/django/shortcuts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="2505">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortener/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1440">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortener/templates/front_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17887564" vertical-offset="0" max-vertical-offset="587">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
