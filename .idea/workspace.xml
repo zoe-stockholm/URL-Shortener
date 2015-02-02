@@ -88,8 +88,8 @@
       <file leaf-file-name="front_page.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shortener/templates/front_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17887564" vertical-offset="0" max-vertical-offset="587">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.25553662" vertical-offset="0" max-vertical-offset="587">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -1032,14 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shortener/templates/shorten_url_existed_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
-          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shortener/templates/shortening_failed_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
@@ -1064,10 +1056,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shortener/templates/shorten_url_existed_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
+          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shortener/templates/front_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17887564" vertical-offset="0" max-vertical-offset="587">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.25553662" vertical-offset="0" max-vertical-offset="587">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
         </state>
       </provider>
