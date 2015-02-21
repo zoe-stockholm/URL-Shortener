@@ -50,16 +50,16 @@ def shorten_url(request):
         form = URLInputForm(request.POST)
         if not form.is_valid():
             return render_to_response('shortening_failed_page.html',
-                                      RequestContext(request),
-                                      {'message': 'The input URL is invalid.'})
+                                      {'message': 'The input URL is invalid.'},
+                                      context_instance=RequestContext(request))
 
         url_input = form.cleaned_data['url_input']
 
         # # handle if this URL input is not able to be shortened.
         if not urlparse(url_input).path[1:]:
             return render_to_response('shortening_failed_page.html',
-                                      RequestContext(request),
-                                      {'message': 'The input URL is unshortenable.'})
+                                      {'message': 'The input URL is unshortenable.'},
+                                      context_instance=RequestContext(request))
 
         # # handle if this URL input was shortened before.
         if URLPair.objects.filter(original_url=url_input).exists():
@@ -68,8 +68,8 @@ def shorten_url(request):
                              'shortened_url': url_pair.shortened_url
                              }
             return render_to_response('shorten_url_existed_page.html',
-                                      RequestContext(request),
-                                      result_return)
+                                      result_return,
+                                      context_instance=RequestContext(request))
 
         # # handle if all words in wordslist were used
         if file_len(settings.PROJECT_ROOT + settings.TEST_DATA_PATH) == len(URLPair.objects.all()):
@@ -84,14 +84,13 @@ def shorten_url(request):
                          'shortened_url': new_url_pair.shortened_url
                          }
         return render_to_response('result_page.html',
-                                  RequestContext(request),
-                                  result_return)
+                                  result_return, context_instance=RequestContext(request))
 
     else:
         form = URLInputForm()
-        return render_to_response('front_page.html',
-                                  RequestContext(request),
-                                  {'form': form})
+        return render_to_response('front_page.html', {'form': form},
+                                  context_instance=RequestContext(request)
+                                  )
 
 
 def redirect(request, key):
