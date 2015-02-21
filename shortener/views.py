@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.http import HttpResponsePermanentRedirect
 from django.shortcuts import render_to_response, get_object_or_404
+from django.template import RequestContext
 from shortener.forms import URLInputForm
 from shortener.models import URLPair
 from urlparse import urlparse
@@ -48,13 +49,17 @@ def shorten_url(request):
     if request.method == 'POST':
         form = URLInputForm(request.POST)
         if not form.is_valid():
-            return render_to_response('shortening_failed_page.html', {'message': 'The input URL is invalid.'})
+            return render_to_response('shortening_failed_page.html',
+                                      RequestContext(request),
+                                      {'message': 'The input URL is invalid.'})
 
         url_input = form.cleaned_data['url_input']
 
         # # handle if this URL input is not able to be shortened.
         if not urlparse(url_input).path[1:]:
-            return render_to_response('shortening_failed_page.html', {'message': 'The input URL is unshortenable.'})
+            return render_to_response('shortening_failed_page.html',
+                                      RequestContext(request),
+                                      {'message': 'The input URL is unshortenable.'})
 
         # # handle if this URL input was shortened before.
         if URLPair.objects.filter(original_url=url_input).exists():
@@ -62,7 +67,9 @@ def shorten_url(request):
             result_return = {'original_url': url_pair.original_url,
                              'shortened_url': url_pair.shortened_url
                              }
-            return render_to_response('shorten_url_existed_page.html', result_return)
+            return render_to_response('shorten_url_existed_page.html',
+                                      RequestContext(request),
+                                      result_return)
 
         # # handle if all words in wordslist were used
         if file_len(settings.PROJECT_ROOT + settings.TEST_DATA_PATH) == len(URLPair.objects.all()):
@@ -76,11 +83,15 @@ def shorten_url(request):
         result_return = {'original_url': new_url_pair.original_url,
                          'shortened_url': new_url_pair.shortened_url
                          }
-        return render_to_response('result_page.html', result_return)
+        return render_to_response('result_page.html',
+                                  RequestContext(request),
+                                  result_return)
 
     else:
         form = URLInputForm()
-        return render_to_response('front_page.html', {'form': form})
+        return render_to_response('front_page.html',
+                                  RequestContext(request),
+                                  {'form': form})
 
 
 def redirect(request, key):
